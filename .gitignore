@@ -1,0 +1,7 @@
+.vemv/
+build/
+dist/
+*.spec
+*.txt
+*.m4a
+*.mp3
