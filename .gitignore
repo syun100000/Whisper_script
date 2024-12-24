@@ -3,5 +3,6 @@ build/
 dist/
 *.spec
 *.txt
+!requirements.txt
 *.m4a
 *.mp3
