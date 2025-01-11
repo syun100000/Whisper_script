@@ -1,9 +1,9 @@
 import whisper
 import os
-import pyperclip
+# import pyperclip
 
 # モデルをロード
-model = whisper.load_model("base")
+model = whisper.load_model("turbo")
 
 # ユーザーから音声ファイルのパスを入力として受け取る
 audio_file_path = input("音声ファイルのパスを入力してください: ")
@@ -30,9 +30,9 @@ else:
     
     print(f"テキストファイルを保存しました: {text_file_path}")
     # テキストをクリップボードにコピー
-    try:
-        pyperclip.copy(result["text"])
-        print("テキストがクリップボードにコピーされました。")
-    except ImportError:
-        print("pyperclipモジュールがインストールされていません。クリップボードへのコピーはスキップされました。")
+    # try:
+    #     pyperclip.copy(result["text"])
+    #     print("テキストがクリップボードにコピーされました。")
+    # except ImportError:
+    #     print("pyperclipモジュールがインストールされていません。クリップボードへのコピーはスキップされました。")
     print("処理が完了しました。")
